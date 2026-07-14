@@ -1,31 +1,50 @@
-# Portfolio — Local Setup
+# Portfolio Website
 
-## 1. Server
+A full-stack personal portfolio with a public site (Home, Projects, Contact) and a password-protected admin panel for managing projects, skills, and contact messages.
+
+**Live site:** https://subaskathayat-seven.vercel.app
+**API:** https://subas-kathayat.onrender.com
+
+## Tech Stack
+
+- **Frontend:** React (Vite), Tailwind CSS, React Router, Axios, Formik + Yup
+- **Backend:** Node.js, Express, JWT authentication
+- **Database:** MongoDB Atlas (Mongoose)
+- **Hosting:** Vercel (frontend), Render (backend)
+
+## Project Structure
+
+```
+client/   — React frontend
+server/   — Express API + MongoDB models
+```
+
+## Running Locally
+
+**Backend**
 ```
 cd server
 npm install
-npm run seed   # populates Projects + Skills with your real content
-npm run dev    # starts on http://localhost:5000
+npm run dev
 ```
 
-## 2. Client
+**Frontend**
 ```
 cd client
 npm install
-npm run dev    # starts on http://localhost:5173
+npm run dev
 ```
 
-## Admin Login
-- URL: http://localhost:5173/admin/login
-- Username: `admin`
-- Password: `admin123`
+Both need a `.env` file (not committed)
 
-**Change this password before deploying** — generate a new bcrypt hash and put it in `server/.env` as `ADMIN_PASSWORD_HASH`:
-```
-node -e "console.log(require('bcryptjs').hashSync('your-new-password', 10))"
-```
+## Features
 
-## Notes
-- `server/.env` and `client/.env` are gitignored — never commit them.
-- `mongodb.md` at the repo root has your raw Atlas credentials; delete it once you've confirmed `server/.env` works, or keep this whole folder out of git.
-- Contact form messages, Projects, and Skills are all stored in MongoDB Atlas (`portfolioDB` database).
+- Public pages: Home, Projects, Contact
+- Contact form saves messages to the database
+- Admin panel: add/edit/delete projects and skills, view and manage contact messages
+- JWT-protected admin routes
+
+## Admin Access
+
+Admin login is available at `/admin/login`. 
+Contact here for credentials: contact@subaskathayat.com.np 
