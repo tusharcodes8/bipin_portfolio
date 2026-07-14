@@ -21,7 +21,16 @@ app.use('/api/skills', skillRoutes);
 app.use('/api/messages', messageRoutes);
 app.use('/api/auth', authRoutes);
 
-app.get('/api/health', (req, res) => res.json({ status: 'ok' }));
+app.get('/', (req, res) => {
+  res.json({
+    message: 'Portfolio API is running 🚀',
+    status: 'online'
+  });
+});
+
+app.get('/api/health', (req, res) => {
+  res.json({ status: 'ok' });
+});
 
 app.use(errorHandler);
 
