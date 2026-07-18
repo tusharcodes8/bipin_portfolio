@@ -6,7 +6,15 @@
       "Bash(nslookup cluster0.aepnzqy.mongodb.net)",
       "Bash(curl -sI https://www.google.com)",
       "Bash(taskkill //F //IM node.exe)",
-      "Bash(npm create *)"
+      "Bash(npm create *)",
+      "Bash(sed -i -e 's/focus:border-blue-900 focus:outline-none/transition-colors focus:border-[#0078D4] focus:ring-1 focus:ring-[#0078D4] focus:outline-none/g' -e 's/bg-blue-900 px-4 py-2 font-medium text-white hover:bg-blue-800/bg-[#0078D4] px-4 py-2 font-medium text-white hover:bg-[#106EBE]/g' client/src/components/Admin/ProjectForm.jsx client/src/components/Admin/SkillForm.jsx)",
+      "Bash(sed -i 's/ring-2 ring-blue-900 ring-offset-2/ring-2 ring-[#0078D4] ring-offset-2/g' client/src/components/Admin/SkillForm.jsx)",
+      "Bash(sed -i 's/border-t-blue-900/border-t-[#0078D4]/g' client/src/components/common/Spinner.jsx)",
+      "Bash(git add *)",
+      "Bash(git commit -m ' *)",
+      "Bash(npm run *)",
+      "Read(//tmp/**)",
+      "Bash(git push *)"
     ]
   }
 }
