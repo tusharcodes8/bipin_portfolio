@@ -4,6 +4,7 @@ import { getProjects } from '../services/projectService';
 import SkillsList from '../components/Home/SkillsList';
 import ProjectCard from '../components/Projects/ProjectCard';
 import Spinner from '../components/common/Spinner';
+import profilePic from '../assets/images/pp.jpeg';
 
 const Home = () => {
   const [projects, setProjects] = useState([]);
@@ -21,7 +22,7 @@ const Home = () => {
       <section className="relative overflow-hidden bg-gradient-to-br from-[#0078D4] via-[#106EBE] to-[#004578] text-white">
         <div className="mx-auto flex max-w-3xl flex-col items-center gap-6 px-4 py-24 text-center">
           <img
-            src="/profile-pic.png"
+            src={profilePic}
             alt="Bipin Pandey"
             className="h-40 w-40 rounded-full border-4 border-white/80 object-cover shadow-xl"
           />
