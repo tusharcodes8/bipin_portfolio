@@ -14,8 +14,17 @@ const Projects = () => {
   }, []);
 
   return (
-    <div className="mx-auto max-w-5xl px-4 py-16">
-      <h1 className="mb-10 text-center text-3xl font-semibold text-[#1F1F1F]">Projects</h1>
+    <div className="mx-auto max-w-6xl px-6 py-20">
+      <div className="mb-12 max-w-2xl">
+        <span className="text-sm font-semibold uppercase tracking-wider text-[#0078D4]">
+          Portfolio
+        </span>
+        <h1 className="mt-2 text-4xl font-semibold text-[#1F1F1F]">Projects</h1>
+        <p className="mt-4 text-lg leading-relaxed text-slate-500">
+          A collection of things I've designed and built — from full-stack web apps to
+          experiments. Each one taught me something new.
+        </p>
+      </div>
       {loading ? (
         <Spinner />
       ) : (

@@ -34,7 +34,7 @@ const ContactForm = () => {
   });
 
   return (
-    <form onSubmit={formik.handleSubmit} className="mx-auto flex max-w-md flex-col gap-4">
+    <form onSubmit={formik.handleSubmit} className="flex w-full flex-col gap-4">
       {fields.map((field) => (
         <div key={field.name} className="text-left">
           <label htmlFor={field.name} className="mb-1 block text-sm text-slate-600">
