@@ -1,7 +1,8 @@
 {
-  "name": "client",
+  "name": "bipin-portfolio-client",
   "private": true,
   "version": "0.0.0",
+  "author": "Bipin Pandey",
   "type": "module",
   "scripts": {
     "dev": "vite",

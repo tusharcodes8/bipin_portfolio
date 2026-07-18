@@ -5,43 +5,45 @@ const Skill = require('../models/Skill');
 
 const projects = [
   {
-    title: 'Mero Paisa',
+    title: 'TaskFlow',
     description:
-      'A secure and intuitive money wallet app for managing your finances on the go.',
-    imageUrl: '/images/meropaisa.png',
-    githubLink: 'https://github.com/Subaskathayat/meropaisa-wallet-app',
+      'A full-stack task management app with real-time updates, drag-and-drop boards, and team collaboration built on the MERN stack.',
+    imageUrl: '',
+    githubLink: 'https://github.com/bipinpandey/taskflow',
     liveLink: '',
-    embedUrl: 'https://www.youtube.com/embed/qrHjkvmBSYs',
-    techStack: ['Flutter', 'Firebase', 'Bloc'],
+    embedUrl: '',
+    techStack: ['React', 'Node.js', 'Express', 'MongoDB'],
   },
   {
-    title: 'Fresh',
+    title: 'ShopEase',
     description:
-      'A meditation and sleep app designed to help you relax and improve your mental well-being.',
-    imageUrl: '/images/freshapp.png',
-    githubLink: '',
-    liveLink: 'https://www.figma.com/proto/CJyDbNYraxboBHmibcr8YC/Fresh-App',
+      'An e-commerce platform featuring product search, cart, Stripe checkout, and an admin dashboard for inventory management.',
+    imageUrl: '',
+    githubLink: 'https://github.com/bipinpandey/shopease',
+    liveLink: '',
     embedUrl: '',
-    techStack: ['Figma'],
+    techStack: ['React', 'Redux', 'Node.js', 'MongoDB'],
   },
   {
-    title: 'Prompthancer',
+    title: 'DevConnect',
     description:
-      'Prompthancer turns your simple texts into enhanced AI prompts under 10 seconds.',
-    imageUrl: '/images/prompthancer.png',
-    githubLink: 'https://github.com/Subaskathayat/prompthancer',
-    liveLink: 'https://www.prompthance.me',
+      'A social platform for developers with JWT authentication, profiles, posts, and a REST API backed by Express and MongoDB.',
+    imageUrl: '',
+    githubLink: 'https://github.com/bipinpandey/devconnect',
+    liveLink: '',
     embedUrl: '',
-    techStack: ['HTML', 'CSS', 'JavaScript'],
+    techStack: ['React', 'Express', 'MongoDB', 'JWT'],
   },
 ];
 
 const skills = [
   { name: 'React', color: 'blue', category: 'Frontend' },
-  { name: 'Flutter', color: 'teal', category: 'Mobile' },
-  { name: 'Python', color: 'amber', category: 'Backend' },
-  { name: 'Firebase', color: 'red', category: 'Backend' },
-  { name: 'Figma', color: 'purple', category: 'Design' },
+  { name: 'Node.js', color: 'green', category: 'Backend' },
+  { name: 'Express', color: 'slate', category: 'Backend' },
+  { name: 'MongoDB', color: 'green', category: 'Database' },
+  { name: 'JavaScript', color: 'amber', category: 'Language' },
+  { name: 'TypeScript', color: 'blue', category: 'Language' },
+  { name: 'Tailwind CSS', color: 'teal', category: 'Frontend' },
   { name: 'Git', color: 'slate', category: 'Tools' },
 ];
 

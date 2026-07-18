@@ -31,7 +31,7 @@ const SkillForm = ({ initialSkill, onSubmit, onCancel }) => {
         value={values.name}
         onChange={handleChange}
         required
-        className="rounded-md border border-slate-300 bg-white px-3 py-2 text-slate-900 focus:border-blue-900 focus:outline-none"
+        className="rounded-md border border-slate-300 bg-white px-3 py-2 text-slate-900 transition-colors focus:border-[#0078D4] focus:ring-1 focus:ring-[#0078D4] focus:outline-none"
       />
 
       <div>
@@ -45,7 +45,7 @@ const SkillForm = ({ initialSkill, onSubmit, onCancel }) => {
               onClick={() => setValues((prev) => ({ ...prev, color: c.key }))}
               className={`h-8 w-8 rounded-full ${c.swatch} transition-transform ${
                 values.color === c.key
-                  ? 'ring-2 ring-blue-900 ring-offset-2 scale-110'
+                  ? 'ring-2 ring-[#0078D4] ring-offset-2 scale-110'
                   : 'hover:scale-105'
               }`}
             />
@@ -57,7 +57,7 @@ const SkillForm = ({ initialSkill, onSubmit, onCancel }) => {
         name="category"
         value={values.category}
         onChange={handleChange}
-        className="rounded-md border border-slate-300 bg-white px-3 py-2 text-slate-900 focus:border-blue-900 focus:outline-none"
+        className="rounded-md border border-slate-300 bg-white px-3 py-2 text-slate-900 transition-colors focus:border-[#0078D4] focus:ring-1 focus:ring-[#0078D4] focus:outline-none"
       >
         {categories.map((cat) => (
           <option key={cat} value={cat}>
@@ -68,7 +68,7 @@ const SkillForm = ({ initialSkill, onSubmit, onCancel }) => {
       <div className="flex gap-3">
         <button
           type="submit"
-          className="rounded-md bg-blue-900 px-4 py-2 font-medium text-white hover:bg-blue-800"
+          className="rounded-md bg-[#0078D4] px-4 py-2 font-medium text-white hover:bg-[#106EBE]"
         >
           Save
         </button>

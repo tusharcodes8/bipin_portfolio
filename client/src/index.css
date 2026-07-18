@@ -2,4 +2,6 @@
 
 body {
   @apply bg-white text-slate-700;
+  font-family: "Segoe UI", "Segoe UI Web", -apple-system, BlinkMacSystemFont,
+    system-ui, Roboto, "Helvetica Neue", sans-serif;
 }

@@ -15,7 +15,7 @@ const Projects = () => {
 
   return (
     <div className="mx-auto max-w-5xl px-4 py-16">
-      <h1 className="mb-10 text-center text-3xl font-semibold text-slate-900">Projects</h1>
+      <h1 className="mb-10 text-center text-3xl font-semibold text-[#1F1F1F]">Projects</h1>
       {loading ? (
         <Spinner />
       ) : (

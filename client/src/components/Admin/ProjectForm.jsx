@@ -48,7 +48,7 @@ const ProjectForm = ({ initialProject, onSubmit, onCancel }) => {
         value={values.title}
         onChange={handleChange}
         required
-        className="rounded-md border border-slate-300 bg-white px-3 py-2 text-slate-900 focus:border-blue-900 focus:outline-none"
+        className="rounded-md border border-slate-300 bg-white px-3 py-2 text-slate-900 transition-colors focus:border-[#0078D4] focus:ring-1 focus:ring-[#0078D4] focus:outline-none"
       />
       <textarea
         name="description"
@@ -57,47 +57,47 @@ const ProjectForm = ({ initialProject, onSubmit, onCancel }) => {
         onChange={handleChange}
         required
         rows={3}
-        className="rounded-md border border-slate-300 bg-white px-3 py-2 text-slate-900 focus:border-blue-900 focus:outline-none"
+        className="rounded-md border border-slate-300 bg-white px-3 py-2 text-slate-900 transition-colors focus:border-[#0078D4] focus:ring-1 focus:ring-[#0078D4] focus:outline-none"
       />
       <input
         name="imageUrl"
         placeholder="Image URL"
         value={values.imageUrl}
         onChange={handleChange}
-        className="rounded-md border border-slate-300 bg-white px-3 py-2 text-slate-900 focus:border-blue-900 focus:outline-none"
+        className="rounded-md border border-slate-300 bg-white px-3 py-2 text-slate-900 transition-colors focus:border-[#0078D4] focus:ring-1 focus:ring-[#0078D4] focus:outline-none"
       />
       <input
         name="githubLink"
         placeholder="GitHub Link"
         value={values.githubLink}
         onChange={handleChange}
-        className="rounded-md border border-slate-300 bg-white px-3 py-2 text-slate-900 focus:border-blue-900 focus:outline-none"
+        className="rounded-md border border-slate-300 bg-white px-3 py-2 text-slate-900 transition-colors focus:border-[#0078D4] focus:ring-1 focus:ring-[#0078D4] focus:outline-none"
       />
       <input
         name="liveLink"
         placeholder="Live Demo Link"
         value={values.liveLink}
         onChange={handleChange}
-        className="rounded-md border border-slate-300 bg-white px-3 py-2 text-slate-900 focus:border-blue-900 focus:outline-none"
+        className="rounded-md border border-slate-300 bg-white px-3 py-2 text-slate-900 transition-colors focus:border-[#0078D4] focus:ring-1 focus:ring-[#0078D4] focus:outline-none"
       />
       <input
         name="embedUrl"
         placeholder="YouTube Embed URL (optional)"
         value={values.embedUrl}
         onChange={handleChange}
-        className="rounded-md border border-slate-300 bg-white px-3 py-2 text-slate-900 focus:border-blue-900 focus:outline-none"
+        className="rounded-md border border-slate-300 bg-white px-3 py-2 text-slate-900 transition-colors focus:border-[#0078D4] focus:ring-1 focus:ring-[#0078D4] focus:outline-none"
       />
       <input
         name="techStack"
         placeholder="Tech Stack (comma separated)"
         value={values.techStack}
         onChange={handleChange}
-        className="rounded-md border border-slate-300 bg-white px-3 py-2 text-slate-900 focus:border-blue-900 focus:outline-none"
+        className="rounded-md border border-slate-300 bg-white px-3 py-2 text-slate-900 transition-colors focus:border-[#0078D4] focus:ring-1 focus:ring-[#0078D4] focus:outline-none"
       />
       <div className="flex gap-3">
         <button
           type="submit"
-          className="rounded-md bg-blue-900 px-4 py-2 font-medium text-white hover:bg-blue-800"
+          className="rounded-md bg-[#0078D4] px-4 py-2 font-medium text-white hover:bg-[#106EBE]"
         >
           Save
         </button>

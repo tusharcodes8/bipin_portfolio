@@ -25,14 +25,14 @@ const AdminLogin = () => {
 
   return (
     <div className="mx-auto flex max-w-sm flex-col gap-4 px-4 py-24">
-      <h1 className="text-center text-2xl font-semibold text-slate-900">Admin Login</h1>
-      <form onSubmit={handleSubmit} className="flex flex-col gap-3">
+      <h1 className="text-center text-2xl font-semibold text-[#1F1F1F]">Admin Login</h1>
+      <form onSubmit={handleSubmit} className="flex flex-col gap-3 rounded-lg border border-slate-200 bg-white p-6 shadow-sm">
         <input
           placeholder="Username"
           value={username}
           onChange={(e) => setUsername(e.target.value)}
           required
-          className="rounded-md border border-slate-300 bg-white px-3 py-2 text-slate-900 focus:border-blue-900 focus:outline-none"
+          className="rounded border border-slate-300 bg-white px-3 py-2 text-slate-900 transition-colors focus:border-[#0078D4] focus:ring-1 focus:ring-[#0078D4] focus:outline-none"
         />
         <input
           type="password"
@@ -40,12 +40,12 @@ const AdminLogin = () => {
           value={password}
           onChange={(e) => setPassword(e.target.value)}
           required
-          className="rounded-md border border-slate-300 bg-white px-3 py-2 text-slate-900 focus:border-blue-900 focus:outline-none"
+          className="rounded border border-slate-300 bg-white px-3 py-2 text-slate-900 transition-colors focus:border-[#0078D4] focus:ring-1 focus:ring-[#0078D4] focus:outline-none"
         />
         <button
           type="submit"
           disabled={submitting}
-          className="rounded-md bg-blue-900 px-4 py-2 font-medium text-white hover:bg-blue-800 disabled:opacity-50"
+          className="rounded bg-[#0078D4] px-4 py-2 font-medium text-white shadow-sm transition-all hover:bg-[#106EBE] hover:shadow-md disabled:opacity-50"
         >
           {submitting ? 'Logging in...' : 'Login'}
         </button>

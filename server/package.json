@@ -1,7 +1,8 @@
 {
-  "name": "portfolio-server",
+  "name": "bipin-portfolio-server",
   "version": "1.0.0",
   "private": true,
+  "author": "Bipin Pandey",
   "type": "commonjs",
   "main": "server.js",
   "scripts": {

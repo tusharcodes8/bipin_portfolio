@@ -47,7 +47,7 @@ const ContactForm = () => {
             value={formik.values[field.name]}
             onChange={formik.handleChange}
             onBlur={formik.handleBlur}
-            className="w-full rounded-md border border-slate-300 bg-white px-3 py-2 text-slate-900 focus:border-blue-900 focus:outline-none"
+            className="w-full rounded border border-slate-300 bg-white px-3 py-2 text-slate-900 transition-colors focus:border-[#0078D4] focus:ring-1 focus:ring-[#0078D4] focus:outline-none"
           />
           {formik.touched[field.name] && formik.errors[field.name] && (
             <p className="mt-1 text-xs text-red-600">{formik.errors[field.name]}</p>
@@ -65,7 +65,7 @@ const ContactForm = () => {
           value={formik.values.message}
           onChange={formik.handleChange}
           onBlur={formik.handleBlur}
-          className="w-full rounded-md border border-slate-300 bg-white px-3 py-2 text-slate-900 focus:border-blue-900 focus:outline-none"
+          className="w-full rounded border border-slate-300 bg-white px-3 py-2 text-slate-900 transition-colors focus:border-[#0078D4] focus:ring-1 focus:ring-[#0078D4] focus:outline-none"
         />
         {formik.touched.message && formik.errors.message && (
           <p className="mt-1 text-xs text-red-600">{formik.errors.message}</p>
@@ -74,7 +74,7 @@ const ContactForm = () => {
       <button
         type="submit"
         disabled={formik.isSubmitting}
-        className="rounded-md bg-blue-900 px-4 py-2 font-medium text-white transition-colors hover:bg-blue-800 disabled:opacity-50"
+        className="rounded bg-[#0078D4] px-4 py-2 font-medium text-white shadow-sm transition-all hover:bg-[#106EBE] hover:shadow-md disabled:opacity-50"
       >
         {formik.isSubmitting ? 'Sending...' : 'Send Message'}
       </button>

@@ -122,8 +122,8 @@ const AdminDashboard = () => {
   return (
     <div className="mx-auto max-w-5xl px-4 py-10">
       <div className="mb-8 flex items-center justify-between">
-        <h1 className="text-2xl font-semibold text-slate-900">Admin Dashboard</h1>
-        <button onClick={logout} className="text-sm text-slate-500 hover:text-blue-900">
+        <h1 className="text-2xl font-semibold text-[#1F1F1F]">Admin Dashboard</h1>
+        <button onClick={logout} className="text-sm text-slate-500 hover:text-[#0078D4]">
           Logout
         </button>
       </div>
@@ -134,7 +134,7 @@ const AdminDashboard = () => {
             key={t.key}
             onClick={() => setTab(t.key)}
             className={`rounded-md px-4 py-2 text-sm font-medium ${
-              tab === t.key ? 'bg-blue-900 text-white' : 'bg-slate-100 text-slate-600'
+              tab === t.key ? 'bg-[#0078D4] text-white' : 'bg-slate-100 text-slate-600'
             }`}
           >
             {t.label}
@@ -160,7 +160,7 @@ const AdminDashboard = () => {
           ) : (
             <button
               onClick={() => setShowProjectForm(true)}
-              className="w-fit rounded-md bg-blue-900 px-4 py-2 text-sm font-medium text-white hover:bg-blue-800"
+              className="w-fit rounded-md bg-[#0078D4] px-4 py-2 text-sm font-medium text-white hover:bg-[#106EBE]"
             >
               + Add Project
             </button>
@@ -171,7 +171,7 @@ const AdminDashboard = () => {
                 key={project._id}
                 className="rounded-lg border border-slate-200 bg-white p-4 shadow-sm"
               >
-                <h3 className="font-semibold text-slate-900">{project.title}</h3>
+                <h3 className="font-semibold text-[#1F1F1F]">{project.title}</h3>
                 <p className="mt-1 text-sm text-slate-500">{project.description}</p>
                 <div className="mt-3 flex gap-3 text-sm">
                   <button
@@ -179,7 +179,7 @@ const AdminDashboard = () => {
                       setEditingProject(project);
                       setShowProjectForm(true);
                     }}
-                    className="text-blue-900 hover:underline"
+                    className="text-[#0078D4] hover:underline"
                   >
                     Edit
                   </button>
@@ -208,7 +208,7 @@ const AdminDashboard = () => {
           ) : (
             <button
               onClick={() => setShowSkillForm(true)}
-              className="w-fit rounded-md bg-blue-900 px-4 py-2 text-sm font-medium text-white hover:bg-blue-800"
+              className="w-fit rounded-md bg-[#0078D4] px-4 py-2 text-sm font-medium text-white hover:bg-[#106EBE]"
             >
               + Add Skill
             </button>
@@ -224,7 +224,7 @@ const AdminDashboard = () => {
                     className={`h-4 w-4 rounded-full ${getSkillColor(skill.color).swatch}`}
                   />
                   <div>
-                    <p className="font-medium text-slate-900">{skill.name}</p>
+                    <p className="font-medium text-[#1F1F1F]">{skill.name}</p>
                     <p className="text-xs text-slate-500">{skill.category}</p>
                   </div>
                 </div>
@@ -234,7 +234,7 @@ const AdminDashboard = () => {
                       setEditingSkill(skill);
                       setShowSkillForm(true);
                     }}
-                    className="text-blue-900 hover:underline"
+                    className="text-[#0078D4] hover:underline"
                   >
                     Edit
                   </button>
@@ -256,11 +256,11 @@ const AdminDashboard = () => {
             <div
               key={msg._id}
               className={`rounded-lg border bg-white p-4 shadow-sm ${
-                msg.readStatus ? 'border-slate-200' : 'border-blue-900'
+                msg.readStatus ? 'border-slate-200' : 'border-[#0078D4]'
               }`}
             >
               <div className="flex items-center justify-between">
-                <h3 className="font-semibold text-slate-900">
+                <h3 className="font-semibold text-[#1F1F1F]">
                   {msg.subject} — <span className="text-slate-500">{msg.name}</span>
                 </h3>
                 <span className="text-xs text-slate-400">
@@ -273,7 +273,7 @@ const AdminDashboard = () => {
                 {!msg.readStatus && (
                   <button
                     onClick={() => handleMarkRead(msg._id)}
-                    className="text-blue-900 hover:underline"
+                    className="text-[#0078D4] hover:underline"
                   >
                     Mark as read
                   </button>
