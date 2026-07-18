@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { SKILL_COLORS } from '../../constants/skillColors';
 
 const emptySkill = { name: '', color: 'blue', category: 'Frontend' };
-const categories = ['Frontend', 'Backend', 'Mobile', 'Design', 'Tools'];
+const categories = ['Frontend', 'Backend', 'Database', 'Language', 'Mobile', 'Design', 'Tools'];
 
 const SkillForm = ({ initialSkill, onSubmit, onCancel }) => {
   const [values, setValues] = useState(emptySkill);
